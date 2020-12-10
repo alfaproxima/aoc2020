@@ -1,4 +1,4 @@
-import { reportRepairTwoEntries, reportRepairThreeEntries } from '../src/day1/report-repair';
+import { reportRepairTwoEntries, reportRepairThreeEntries } from '../src/day01/report-repair';
 
 const expenseReport = [1721, 979, 366, 299, 675, 1456];
 

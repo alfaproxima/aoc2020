@@ -1,4 +1,4 @@
-import { countUniqueAnswersInGroup, sumAllUniqueAnswers, sumAllAnswers } from '../src/day6/custom-customs';
+import { countUniqueAnswersInGroup, sumAllUniqueAnswers, sumAllAnswers } from '../src/day06/custom-customs';
 
 const group = `abcx
 abcy

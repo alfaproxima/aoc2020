@@ -1,4 +1,4 @@
-import { findNumberInSequence, findSequenceSum } from '../src/day9/encoding-error';
+import { findNumberInSequence, findSequenceSum } from '../src/day09/encoding-error';
 
 const data = `35
 20

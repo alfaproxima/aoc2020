@@ -1,4 +1,4 @@
-import {parseInput, parseInput2, countBagsContainOne, countBagsInOne} from '../src/day7/handy-haversacks';
+import {parseInput, parseInput2, countBagsContainOne, countBagsInOne} from '../src/day07/handy-haversacks';
 
 const rules = `light red bags contain 1 bright white bag, 2 muted yellow bags.
 dark orange bags contain 3 bright white bags, 4 muted yellow bags.

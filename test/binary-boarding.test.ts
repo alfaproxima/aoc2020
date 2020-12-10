@@ -1,4 +1,4 @@
-import { rowInRange, columnInRange, getSeatId, findMaxIdInList } from '../src/day5/binary-boarding';
+import { rowInRange, columnInRange, getSeatId, findMaxIdInList } from '../src/day05/binary-boarding';
 
 const data = `BFFFBBFRRR
 FFFBBBFRRR

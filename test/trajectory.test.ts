@@ -1,4 +1,4 @@
-import { parseInput, repeatRow, findMarkAtPosition, findTrajectory, countTrees } from '../src/day3/trajectory';
+import { parseInput, findMarkAtPosition, findTrajectory, countTrees } from '../src/day03/trajectory';
 
 const rowData = `..##.......
 #...#...#..

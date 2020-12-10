@@ -1,5 +1,4 @@
-import { parseInput, validatePassport, validatePassportPart2, countValidPassports, isFieldValid } from '../src/day4/validate-passport';
-import { PASSPORTS } from '../src/day4/data';
+import { parseInput, validatePassport, validatePassportPart2, countValidPassports, isFieldValid } from '../src/day04/validate-passport';
 
 const data = 
 `ecl:gry pid:860033327 eyr:2020 hcl:#fffffd

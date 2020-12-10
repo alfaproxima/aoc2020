@@ -1,4 +1,4 @@
-import { parsePasswordPolicy, validateByQuantity, validateByPosition, countValidPasswords } from '../src/day2/password-validation';
+import { parsePasswordPolicy, validateByQuantity, validateByPosition, countValidPasswords } from '../src/day02/password-validation';
 
 const passwords = [
   '1-3 a: abcde',

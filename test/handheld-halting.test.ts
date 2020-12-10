@@ -1,5 +1,4 @@
-import { parseInput, run, runWithFix } from '../src/day8/handheld-halting';
-import { INSTRUCTIONS } from '../src/day8/data';
+import { parseInput, run, runWithFix } from '../src/day08/handheld-halting';
 
 const data = `nop +0
 acc +1
