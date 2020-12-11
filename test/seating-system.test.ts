@@ -1,4 +1,4 @@
-import { applyRules, iterateThroughMap, countOccupiedSeats } from '../src/day11/seating-system';
+import { applyRules, applyRulesPart2, iterateThroughMap, countOccupiedSeats } from '../src/day11/seating-system';
 
 const input =
 `L.LL.LL.LL
@@ -42,11 +42,15 @@ describe("Day 11: Seating System", () => {
   })
 
   test("Iterate map", () => {
-    expect(iterateThroughMap(parsed)).toEqual(iterated);
+    expect(iterateThroughMap(parsed, applyRules)).toEqual(iterated);
   })
 
   test("Count occupied seats", () => {
-    expect(countOccupiedSeats(input)).toBe(37);
+    expect(countOccupiedSeats(input, applyRules)).toBe(37);
+  })
+
+  test("Apply rules to given line part 2", () => {
+    expect(countOccupiedSeats(input, applyRulesPart2)).toBe(26);
   })
 });
 
