@@ -71,5 +71,5 @@ export const findSequenceTimestamp = (input: string): number => {
 export const execute = () => {
   console.log('DAY 13: Shuttle Search -------------------------');
   console.log('Part 1: ', findEarliestBusId(DATA));
-  console.log('Part 2: ');
+  console.log('Part 2: ', findSequenceTimestamp(DATA));
 }
