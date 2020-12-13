@@ -67,21 +67,6 @@ export const navigatePart2 = (input: string): any => {
   return Math.abs(ship.north) + Math.abs(ship.west);
 }
 
-export const executeInstruction = ([command, arg]: Instruction, pos: Position) => {
-
-  if (['N', 'E', 'S', 'W'].includes(command)) {
-    return move([command, arg], pos);
-  }
-
-  if (command === 'F') {
-    return move([pos.direction, arg], pos);
-  }
-
-  if (command === 'L' || command === 'R') {
-    return rotate(command, arg, pos);
-  }
-}
-
 export const move = ([direction, steps]: Instruction, pos: Position): Position => {
   const position = {...pos};
 
@@ -119,7 +104,7 @@ export const rotate = (turn: Turn, degree: number, pos: Position): Position => {
   return position;
 }
  
-// Because of using north-west positioning in part one I decide to continue that calculations in part 2 either.
+// Because of using north-west positioning in part one I decide to continue that calculations in the part 2 either.
 export const rotateWaypoint = (turn: Turn, degree: number, waypoint: Position): Position => {
   const pos = {...waypoint};
   const directions: Direction[] = ['N', 'E', 'S', 'W'];
