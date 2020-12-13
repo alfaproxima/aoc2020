@@ -42,23 +42,23 @@ export const findSequenceTimestamp = (input: string): number => {
   const [ids]: any[] = parseInput(input).slice(2);
 
   let timestamp = 0;
-  let id = 1;
+  let offset = 1;
   let i = ids[0];
 
   while (true) {
-    const curId = ids[id];
+    const curId = ids[offset];
 
     if (curId === 0) {
-      id += 1;
+      offset += 1;
       continue;
     }
 
-    if ((timestamp + id) % curId === 0) {
+    if ((timestamp + offset) % curId === 0) {
       i *= curId;
-      id += 1;
+      offset += 1;
     }
 
-    if (id >= ids.length) {
+    if (offset >= ids.length) {
       break;
     }
 
