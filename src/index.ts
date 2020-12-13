@@ -10,6 +10,7 @@ import * as day09 from './day09/encoding-error';
 import * as day10 from './day10/adapter-array';
 import * as day11 from './day11/seating-system';
 import * as day12 from './day12/rain-risk';
+import * as day13 from './day13/shuttle-search';
 
 console.time();
 day01.execute();
@@ -24,4 +25,5 @@ day09.execute();
 day10.execute();
 day11.execute();
 day12.execute();
+day13.execute();
 console.timeEnd();
