@@ -1,0 +1,1 @@
+export const GAME = `6,3,15,13,1,0`; 
