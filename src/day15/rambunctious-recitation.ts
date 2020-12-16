@@ -7,14 +7,13 @@ const parseInput = (input: string): number[] => {
 export const play = (input: string, gameLength: number): any => {
   const numbers = parseInput(input);
   const spokenlast = new Map<number, number>();
-  let turn = numbers[numbers.length - 1];
+  let prevNumber = numbers[numbers.length - 1];
 
   numbers.forEach((num, i) => {
     spokenlast.set(num, i + 1);
   });
 
   for(let i = numbers.length + 1; i <= gameLength; i++) {
-    const prevNumber = turn;
     let lastTurn = spokenlast.get(prevNumber);
     let shout = 0;
 
@@ -23,10 +22,10 @@ export const play = (input: string, gameLength: number): any => {
     }
 
     spokenlast.set(prevNumber, i - 1);
-    turn = shout;
+    prevNumber = shout;
   }
 
-  return turn;
+  return prevNumber;
 }
 
 export const execute = () => {
