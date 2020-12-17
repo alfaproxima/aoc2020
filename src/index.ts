@@ -13,6 +13,7 @@ import * as day12 from './day12/rain-risk';
 import * as day13 from './day13/shuttle-search';
 import * as day14 from './day14/docking-data';
 import * as day15 from './day15/rambunctious-recitation';
+import * as day16 from './day16/ticket-translation';
 
 console.time();
 day01.execute();
@@ -30,4 +31,5 @@ day12.execute();
 day13.execute();
 day14.execute();
 day15.execute();
+day16.execute();
 console.timeEnd();
